@@ -1,0 +1,156 @@
+<!Doctype html>
+<html>
+	<head>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<style>
+		form {
+
+		  -webkit-backdrop-filter: blur(20px);
+		  backdrop-filter: blur(20px);
+  
+		  border: 1px solid rgba(255, 255, 255, 0.2);
+		  background-color: rgba(209, 199, 223, 0.404);
+		}
+		table {
+		  td,
+		  th {
+			border: none;
+			height: 70px;
+			font-size: x-large;
+			text-align: justify;
+		  }
+		  .td {
+			text-align: right;
+		  }
+		}
+		h1 {
+		  color:blue;
+		  height: 50px;
+		  font-size: x-large;
+		}
+
+		.button{
+			height: 40px;
+			width: 150px;
+			margin: 20px;
+		}
+		.hero-content{
+			height: 300px;
+			background-color: rgba(209, 199, 223, 0.404);
+			padding-top: 50px;
+		}
+
+		@media (max-width: 768px) {
+			.hero {
+				grid-template-columns: 1fr;
+				text-align: center;
+				
+			}
+
+			.contact-buttons {
+				flex-direction: column;
+				align-items: stretch;
+			}
+		}
+		
+		@media (min-width: 768px) {
+			.hero {
+				
+				display: flex;
+			}	
+			
+		}
+		
+	  </style>
+	</head>
+	<body>
+		<h1 id="h11"><center>Mon Site Personnel<br> Contact</center></h1>
+		<ul>
+			<li><a href="../index.html">Accueil</a></li>
+			<li><a href="CV.html">CV</a></li>
+			<li><a href="Agenda.html">Agenda</a></li>
+			<li><a href="Photo.html">Photo</a></li>
+			<li class="select"><a href="Contact.html">Contact</a></li>
+		</ul>
+		<section class="leCorps">
+			
+
+			<section class="hero contact_section" >
+				<div>
+					<h1 class="cont"><center>Mes Contacts</center></h1>
+
+					<div class="hero-content">
+					
+						<table>
+						  <tr>
+							<td class="td"> WhatsApp:</td>
+							<td>
+							  <a href="https://api.whatsapp.com/send?phone=22676593334">76593334/79993598</a>
+							</td>
+						  </tr>
+						  <tr>
+							<td class="td">Email:</td>
+							<td>
+							 <a href="mailto:naabafaical@gmail.com">naabafaical@gmail.com</a>
+							</td>
+						  </tr>
+						  <tr>
+							<td class="td">Market:</td>
+							<td>
+							 <a href="https://sites.google.com/view/sababoutechnaam/accueil">www.TechNaam.com</a>
+							</td>
+						  </tr>
+						</table>
+				</div>
+
+				</div>
+				
+
+				<p class="hero-image">
+					<form action="post" method="post">
+						<table>
+						  <center><h1>Envoyer un message</h1></center>
+						  <tr>
+							<td class="td">Nom:</td>
+							<td>
+							  <input type="text" name="nom" placeholder="Le Nom" required />
+							</td>
+						  </tr>
+						  <tr>
+							<td class="td">Prenom:</td>
+							<td>
+							  <input
+								type="text"
+								name="prenom"
+								placeholder="Le Prenom"
+								required
+							  />
+							</td>
+						  </tr>
+						  <tr>
+							<td class="td">Email:</td>
+							<td>
+							  <input
+								type="email"
+								name="id"
+								placeholder="Email"
+								required
+							  />
+							</td>
+						  </tr>
+						  <tr>
+							<td class="td">Message:</td>
+							<td >
+								<textarea name="email" id="email" placeholder="Message" cols="23" rows="10"></textarea>
+							</td>
+						  </tr>
+						 
+
+						</table>
+						<input class="button" type="submit" />
+					  </form>
+				</p>
+			</section>
+		</section>
+	</body>
+</html>

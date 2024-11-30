@@ -1,0 +1,91 @@
+p:hover {
+  color: blue;
+  transform-style: preserve-3d;
+}
+b:hover {
+  text-transform: uppercase;
+}
+
+body {
+  margin: auto;
+}
+tr:hover {
+  background-color: aquamarine;
+}
+
+td:hover {
+  color: red;
+  background-color: rgb(135, 204, 181);
+}
+
+.p {
+  font-size: large;
+  animation: anim 20s infinite ease-in-out;
+}
+
+@keyframes anim {
+  0% {
+    transform: translateX(400px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(400px);
+  }
+}
+.pp {
+  animation: anim1 20s infinite ease-in-out;
+  width: fit-content;
+}
+@keyframes anim1 {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(400px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.a {
+  color: black;
+}
+section {
+  position: relative;
+  padding: 10px;
+}
+img {
+  position: absolute;
+
+  right: 20px;
+  width: 130px;
+  height: auto;
+}
+@media (min-width: 768px) {
+  img {
+    right: 100px;
+    width: 130px;
+    height: auto;
+  }
+}
+@media (min-width: 850px) {
+  img {
+    right: 100px;
+    width: 250px;
+    height: 200px;
+  }
+  @keyframes anim1 {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(800px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+}
